@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
     body{
         background-image: linear-gradient(to top, #49a09d, #5f2c82 );
     }
@@ -17,17 +17,23 @@
 
     section#login > div#formulario {
         float: right;
-        width: 70%
+        width: 70%;
+        padding-top: 100px;
     }
 
     div#formulario > p {
         font-size: 1.2em;
+    }
+
+    input#isenha, input#iemail {
+        width: calc(100% - 50px)
     }
 }
 
 
 
 @media screen and (min-width: 992px) {
+    /*TELEVISÃO*/
     body{
         background-image: linear-gradient(to top, #49a09d, #5f2c82 );
     }
@@ -44,10 +50,15 @@
 
     section#login > div#formulario {
         float: left;
-        width: 50%
+        width: 50%;
+        padding-top: 90px;
     }
 
     div#formulario > p {
         font-size: 1.5em;
+    }
+
+    input#isenha, input#iemail {
+        width: calc(100% - 50px);
     }
 }
